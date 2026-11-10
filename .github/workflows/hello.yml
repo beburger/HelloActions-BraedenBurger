@@ -34,6 +34,13 @@ jobs:
           # Use Java version 17.
           java-version: '17'
 
+      # Optional challenge: print the current date and time on the runner.
+      - name: Display the current date and time
+        env:
+          # Show the time in Eastern time instead of the runner's default (UTC).
+          TZ: America/New_York
+        run: date
+
       # Compile Hello.java into Hello.class (Java bytecode).
       - name: Compile the Java program
         run: javac Hello.java
