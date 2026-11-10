@@ -10,7 +10,11 @@ SWE 525 - Lab 11
 
 ## How it runs
 
-The workflow in `.github/workflows/hello.yml` checks out the repository, sets up Java 17, compiles `Hello.java` with `javac`, and runs it with `java Hello`. It runs automatically on every push to `main` and can also be started manually from the Actions tab.
+The workflow in `.github/workflows/hello.yml` checks out the repository, sets up Java 17, displays the current date and time, compiles `Hello.java` with `javac`, and runs it with `java Hello`. It runs automatically on every push to `main` and can also be started manually from the Actions tab.
+
+## Optional Challenge: Display the Current Date and Time
+
+The workflow includes a step named "Display the current date and time" that runs the `date` command on the runner before compiling the program. The `TZ` environment variable is set to `America/New_York` so the time is shown in Eastern time instead of the runner's default (UTC). The output can be seen by expanding that step in the workflow run log.
 
 ## Workflow Explanation
 
