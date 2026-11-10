@@ -2,7 +2,7 @@
 
 A simple Hello World project for Lab 11 that demonstrates a basic GitHub Actions workflow using Java.
 
-Course: Lab 11
+SWE 525 - Lab 11
 
 ## What it does
 
